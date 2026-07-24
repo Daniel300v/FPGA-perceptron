@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1784900191" />
+    <testcase name="test1" classname="fullAdderTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\fullAdderTests.py" lineno="5" time="0.0006084442138671875" sim_time_ns="1.0" ratio_time="1643.5360501567397" />
+    <testcase name="test2" classname="fullAdderTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\fullAdderTests.py" lineno="19" time="0.0001652240753173828" sim_time_ns="1.0000000000000002" ratio_time="6052.386724386725" />
+  </testsuite>
+</testsuites>

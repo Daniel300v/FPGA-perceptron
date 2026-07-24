@@ -1,0 +1,46 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.03 Education"
+//Fri Jul 24 14:29:08 2026
+
+//Source file index table:
+//file0 "\C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL\ perceptron/perceptron/src/perceptron.vhd"
+//file1 "\C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL\ perceptron/perceptron/src/halfAdder.vhd"
+//file2 "\C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL\ perceptron/perceptron/src/fullAdder.vhd"
+`pragma protect begin_protected
+`pragma protect version="2.3"
+`pragma protect author="default"
+`pragma protect author_info="default"
+`pragma protect encrypt_agent="GOWIN"
+`pragma protect encrypt_agent_info="GOWIN Encrypt Version 2.3"
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=256)
+`pragma protect key_keyowner="GOWIN",key_keyname="GWK2023-09",key_method="rsa"
+`pragma protect key_block
+jmL9DnnKhY087kp5bXcFqp4UknLZYmvyuNRZd54H4wv4A0nMJ9EOZ31Ygi5mAhirvB86gcatHOrm
+LVfpiAti+WZPeXFVuOzRIOQm7J9S6yZy58eUrhdkMNuz5wVzRLXb8dj9LDGRdiSeX2iT3BJpifn9
+5/EVe4FSgmI9bRT8pS08U+XG4XSqdsxIUy1vGzX0rLNUhAVXB0pUQRKqnVKJyBlGCcgGcEOJG0uR
+olwtTKWx/2EIPhJzr5fQdhcU2t3/gA9fYQdwZJ9OZRmsr3ORJX+yt7Fgz+h/3YbJuvHxrqokjx1z
+uKJEG+zGQRcuRgboCaKGZF0tii6p7tVSQj5Dqg==
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=800)
+`pragma protect data_keyowner="default-ip-vendor"
+`pragma protect data_keyname="default-ip-key"
+`pragma protect data_method="aes128-cfb"
+`pragma protect data_block
+r6DAMV2NUMA5oWTWQ+Wy4yNcR06/BshRps912z5rEgsXsZn8hYro25nVoC/GPRe9Osn4zZnRmFhN
+LPvFPs+XklxZD83rYLBuPeE5sT+TmqhgzhGvUz8eAv75OIhxfzwruK8UR9PILJrFmRTnNagGqNCI
+lfrNt1k2FberGghKXte0jngKWL6V6lz6zFX7A96Goi9NlKe18UELAiy5AuZsQLlutHkOwTb5hBlZ
+M8piUlVzwDgXiuA0k2MDcwHzsiZoyOxgyASVom6bHsIcjTIFtNfCfUGf3CJ5ryLcwjx/qjQsQL+w
+sOMOx/ixg8GqZ8aemUZ9qJzPfVuluj/6GM998WtORD6/VwZD+NgEM4SVv8hRUOJR8JOw/SNPrzfz
+tyG8rlf81TojgyIfEA2YAvovkx80pWjq4DEZLAm8N/kl/MqcT2ZWkzpN8aR8aWoQN0Cmz4xROAnS
+y5ttfl8m7rvhUC+idc9U1KNrh8XT21ToPAywJNMVQY3Y5LJ4fC0JTfHFywXAB2UnYbrLeRlhqMmN
+Cv8hR1x81R7+2prfSnIznbYis2nZ6filRO1YHtQ9DmDDEFp9JSx3ruW/o0wCISFboj477yFGL1TX
+zhBb4+14828g7ZokEgGsX4PVIutntONPwZHCtAeOKIe61WnJ3B8+UWsHySS91gU31cTht58Mslaz
+JKGP82SeKme4zDqouHYSAxzOBZxDg/r39S0SW32I3ESrDn1WLA3Z7wy9ZNrEJrg2cgCb4MWM4mmg
+XSCQOfbKrEldzbHcEd+Z25DUZuiYMZtND1T+HWy3VZvRrS9agL0L5LohYvuj+dW7r5GwtwykbciR
+bezbebtsfQ9c7dSDyXm1ySrwgiD1pLaWwuZbV6CUUVam2roMWyFd34czmNFHeZoc59SUTpkzgYov
+94E+6E9YZG1t1Nvmd4fRGOV76NEdGH1C9LrBK/GOGfZ1Brui/Tn2MfuqpDZBjdgQJ1PNtSGbVroy
+NcrE3N/EbMXGJrEtDb7jZohNWU1RL8K39yF3hYEbZgWAbxR/ZBz7CBhjeHf1LmLIVax3ExpexzW4
+czo=
+`pragma protect end_protected

@@ -1,0 +1,18 @@
+[
+ {
+  "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/halfAdder.vhd",
+  "InstLine" : 4,
+  "InstName" : "halfAdder",
+  "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/halfAdder.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "halfAdder"
+ },
+ {
+  "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+  "InstLine" : 4,
+  "InstName" : "fullAdder",
+  "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "fullAdder"
+ }
+]
