@@ -1,14 +1,19 @@
 GowinSynthesis start
 Running parser ...
-Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd'
-Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd'
-Analyzing entity 'halfadder'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
-Analyzing architecture 'halfadderlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":11)
+Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd'
+Analyzing entity 'eightbitadder'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":4)
+Analyzing architecture 'eightbitadderlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":10)
 Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\fullAdder.vhd'
 Analyzing entity 'fulladder'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\fullAdder.vhd":4)
 Analyzing architecture 'fulladderlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\fullAdder.vhd":12)
+Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd'
+Analyzing entity 'halfadder'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
+Analyzing architecture 'halfadderlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":11)
+Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd'
+Processing 'eightBitAdder(eightBitAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":4)
+Processing 'halfAdder(halfAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
 Processing 'fullAdder(fullAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\fullAdder.vhd":4)
-NOTE  (EX0101) : Current top module is "fullAdder"
+NOTE  (EX0101) : Current top module is "eightBitAdder"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed

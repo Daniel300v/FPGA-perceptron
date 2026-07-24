@@ -1,7 +1,8 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1784900191" />
-    <testcase name="test1" classname="fullAdderTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\fullAdderTests.py" lineno="5" time="0.0006084442138671875" sim_time_ns="1.0" ratio_time="1643.5360501567397" />
-    <testcase name="test2" classname="fullAdderTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\fullAdderTests.py" lineno="19" time="0.0001652240753173828" sim_time_ns="1.0000000000000002" ratio_time="6052.386724386725" />
+    <property name="random_seed" value="1784902752" />
+    <testcase name="test1" classname="eightBitAdder" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\eightBitAdder.py" lineno="5" time="0.00020313262939453125" sim_time_ns="1.0" ratio_time="4922.892018779343" />
+    <testcase name="test2" classname="eightBitAdder" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\eightBitAdder.py" lineno="17" time="5.5789947509765625e-05" sim_time_ns="1.0000000000000002" ratio_time="17924.376068376074" />
+    <testcase name="test3" classname="eightBitAdder" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\eightBitAdder.py" lineno="28" time="0.12005972862243652" sim_time_ns="10000.0" ratio_time="83291.87575834" />
   </testsuite>
 </testsuites>

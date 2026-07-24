@@ -3,12 +3,7 @@
  "Files" : [
   {
    "Library" : "work",
-   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/perceptron.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
-   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/halfAdder.vhd",
+   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
    "Type" : "vhdl"
   },
   {
@@ -18,7 +13,12 @@
   },
   {
    "Library" : "work",
-   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/halfAdder.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/perceptron.vhd",
    "Type" : "vhdl"
   }
  ],

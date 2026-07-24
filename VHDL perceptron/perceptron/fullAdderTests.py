@@ -10,7 +10,7 @@ async def test1(dut):
     dut.B.value = 0
     dut.C.value = 0
 
-    await Timer(1, units="ns")
+    await Timer(1, unit="ns")
 
     assert dut.SUM.value == 0
     assert dut.CARRY.value == 0
@@ -24,7 +24,7 @@ async def test2(dut):
     dut.B.value = 1
     dut.C.value = 1
 
-    await Timer(1, units="ns")
+    await Timer(1, unit="ns")
 
     assert dut.SUM.value == 1
     assert dut.CARRY.value == 1
