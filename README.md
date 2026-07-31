@@ -16,6 +16,9 @@ Future Work
 
 
 python version 3.12.0
+
 python testing framework: cocotb
+
 VHDL simulation: NVC
+
 VHDL development environment GOWIN
