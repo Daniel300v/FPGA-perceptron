@@ -1,11 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="eightBitAdder" T_Lut="19(0)">
- <SubModule name="start" Lut="1" T_Lut="1(1)"/>
- <SubModule name="full1" Lut="1" T_Lut="1(1)"/>
- <SubModule name="full2" Lut="2" T_Lut="2(2)"/>
- <SubModule name="full3" Lut="2" T_Lut="2(2)"/>
- <SubModule name="full4" Lut="3" T_Lut="3(3)"/>
- <SubModule name="full5" Lut="2" T_Lut="2(2)"/>
- <SubModule name="full6" Lut="6" T_Lut="6(6)"/>
- <SubModule name="full7" Lut="2" T_Lut="2(2)"/>
-</Module>
+<Module name="fourBitLeftShift" Lut="8" T_Lut="8(8)"/>

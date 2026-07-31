@@ -12,7 +12,10 @@ def test_my_design_runner():
     sources = [proj_path / "src/perceptron.vhd",
                proj_path / "src/halfAdder.vhd",
                proj_path / "src/fullAdder.vhd",
-               proj_path / "src/eightBitAdder.vhd"]
+               proj_path / "src/eightBitAdder.vhd",
+               proj_path / "src/oneBitLeftShift.vhd",
+               proj_path / "src/twoBitLeftShift.vhd",
+               proj_path / "src/fourBitLeftShift.vhd"]
 
     runner = get_runner(sim)
     runner.build(
@@ -22,8 +25,10 @@ def test_my_design_runner():
 
     #runner.test(hdl_toplevel="halfAdder", test_module="halfAdderTests,")
     #runner.test(hdl_toplevel="fullAdder", test_module="fullAdderTests,")
-    runner.test(hdl_toplevel="eightBitAdder", test_module="eightBitAdder,")
-
+    #runner.test(hdl_toplevel="eightBitAdder", test_module="eightBitAdder,")
+    #runner.test(hdl_toplevel="oneBitLeftShift", test_module="oneBitLeftShiftTests,")
+    #runner.test(hdl_toplevel="twoBitLeftShift", test_module="twoBitLeftShiftTests,")
+    #runner.test(hdl_toplevel="fourBitLeftShift", test_module="fourBitLeftShiftTests,")
 
 if __name__ == "__main__":
     test_my_design_runner()

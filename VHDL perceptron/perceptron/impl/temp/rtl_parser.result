@@ -1,76 +1,100 @@
 [
  {
-  "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
   "InstLine" : 4,
   "InstName" : "eightBitAdder",
-  "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
   "ModuleLine" : 4,
   "ModuleName" : "eightBitAdder",
   "SubInsts" : [
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 37,
     "InstName" : "start",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/halfAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/halfAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "halfAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 44,
     "InstName" : "full1",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 51,
     "InstName" : "full2",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 58,
     "InstName" : "full3",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 65,
     "InstName" : "full4",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 72,
     "InstName" : "full5",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 79,
     "InstName" : "full6",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    },
    {
-    "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "InstLine" : 86,
     "InstName" : "full7",
-    "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/fullAdder.vhd",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fullAdder.vhd",
     "ModuleLine" : 4,
     "ModuleName" : "fullAdder"
    }
   ]
+ },
+ {
+  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
+  "InstLine" : 4,
+  "InstName" : "oneBitLeftShift",
+  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "oneBitLeftShift"
+ },
+ {
+  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
+  "InstLine" : 4,
+  "InstName" : "twoBitLeftShift",
+  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "twoBitLeftShift"
+ },
+ {
+  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
+  "InstLine" : 4,
+  "InstName" : "fourBitLeftShift",
+  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "fourBitLeftShift"
  }
 ]
