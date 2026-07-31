@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="barrelShifter" T_Lut="20(0)">
- <SubModule name="four" Lut="20" T_Lut="20(20)"/>
+<Module name="perceptron" T_Lut="7(0)">
+ <SubModule name="offset" T_Lut="7(0)">
+  <SubModule name="full2" Lut="1" T_Lut="1(1)"/>
+  <SubModule name="full3" Lut="1" T_Lut="1(1)"/>
+  <SubModule name="full4" Lut="1" T_Lut="1(1)"/>
+  <SubModule name="full5" Lut="1" T_Lut="1(1)"/>
+  <SubModule name="full6" Lut="2" T_Lut="2(2)"/>
+  <SubModule name="full7" Lut="1" T_Lut="1(1)"/>
+ </SubModule>
 </Module>
