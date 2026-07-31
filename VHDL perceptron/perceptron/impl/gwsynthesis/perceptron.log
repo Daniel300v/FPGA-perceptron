@@ -1,29 +1,29 @@
 GowinSynthesis start
 Running parser ...
+Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd'
+Analyzing entity 'barrelshifter'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":4)
+Analyzing architecture 'barrelshifterlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":10)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd'
 Analyzing entity 'eightbitadder'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":4)
 Analyzing architecture 'eightbitadderlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":10)
+Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd'
+Analyzing entity 'fourbitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd":4)
+Analyzing architecture 'fourleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd":10)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fullAdder.vhd'
 Analyzing entity 'fulladder'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fullAdder.vhd":4)
 Analyzing architecture 'fulladderlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fullAdder.vhd":12)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\halfAdder.vhd'
 Analyzing entity 'halfadder'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
 Analyzing architecture 'halfadderlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\halfAdder.vhd":11)
-Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd'
-Analyzing entity 'perceptron'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":4)
-Analyzing architecture 'perceptronlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":9)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd'
 Analyzing entity 'onebitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd":4)
 Analyzing architecture 'oneleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd":10)
+Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd'
+Analyzing entity 'perceptron'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":4)
+Analyzing architecture 'perceptronlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":9)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd'
 Analyzing entity 'twobitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":4)
 Analyzing architecture 'twoleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":10)
-Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd'
-Analyzing entity 'fourbitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd":4)
-Analyzing architecture 'fourleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd":10)
-Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd'
-Analyzing entity 'barrelshifter'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":4)
-Analyzing architecture 'barrelshifterlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":10)
 Processing 'perceptron(perceptronLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":4)
 Processing 'barrelShifter(barrelShifterLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":4)
 Processing 'oneBitLeftShift(oneLeftShiftLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd":4)

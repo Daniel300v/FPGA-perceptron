@@ -3,7 +3,17 @@
  "Files" : [
   {
    "Library" : "work",
+   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
    "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
    "Type" : "vhdl"
   },
   {
@@ -18,27 +28,17 @@
   },
   {
    "Library" : "work",
-   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/perceptron.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
    "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
    "Type" : "vhdl"
   },
   {
    "Library" : "work",
+   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/perceptron.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
    "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
-   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
-   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
    "Type" : "vhdl"
   }
  ],

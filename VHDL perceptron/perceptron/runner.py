@@ -24,14 +24,14 @@ def test_my_design_runner():
         hdl_toplevel="perceptron",
     )
 
-    #runner.test(hdl_toplevel="halfAdder", test_module="halfAdderTests,")
-    #runner.test(hdl_toplevel="fullAdder", test_module="fullAdderTests,")
-    #runner.test(hdl_toplevel="eightBitAdder", test_module="eightBitAdder,")
-    #runner.test(hdl_toplevel="oneBitLeftShift", test_module="oneBitLeftShiftTests,")
-    #runner.test(hdl_toplevel="twoBitLeftShift", test_module="twoBitLeftShiftTests,")
-    #runner.test(hdl_toplevel="fourBitLeftShift", test_module="fourBitLeftShiftTests,")
-    #runner.test(hdl_toplevel="barrelShifter", test_module="barrelTests,")
-    runner.test(hdl_toplevel="perceptron", test_module="perceptronTests,")
+    #runner.test(hdl_toplevel="halfAdder", test_module="tests.adder.halfAdderTests,")
+    #runner.test(hdl_toplevel="fullAdder", test_module="tests.adder.fullAdderTests,")
+    #runner.test(hdl_toplevel="eightBitAdder", test_module="tests.adder.eightBitAdder,")
+    #runner.test(hdl_toplevel="oneBitLeftShift", test_module="tests.barrelShifter.oneBitLeftShiftTests,")
+    #runner.test(hdl_toplevel="twoBitLeftShift", test_module="tests.barrelShifter.twoBitLeftShiftTests,")
+    #runner.test(hdl_toplevel="fourBitLeftShift", test_module="tests.barrelShifter.fourBitLeftShiftTests,")
+    #runner.test(hdl_toplevel="barrelShifter", test_module="tests.barrelShifter.barrelTests,")
+    runner.test(hdl_toplevel="perceptron", test_module="tests.perceptronTests,")
 
 
 if __name__ == "__main__":
