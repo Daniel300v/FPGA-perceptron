@@ -10,7 +10,7 @@ VHDL simulation: NVC
 VHDL development environment GOWIN
 
 
-Eight bit perceptron theory
+## Eight bit perceptron theory
 
 The current implementation of the perceptron adheres to a few limitations. Firstly, it will only be limited to eight bit unsigned integer values. Secondly, multiplication will be replaced with bit shifting. Thirdly, the activation function used will be a simple threshold funchtion.
 
