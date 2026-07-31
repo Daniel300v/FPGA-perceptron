@@ -5,13 +5,14 @@
     <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
     <FileList>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd" type="vhdl"/>
-        <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fourBitLeftShift.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fullAdder.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\halfAdder.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd" type="vhdl"/>
         <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd" type="vhdl"/>
+        <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd" type="vhdl"/>
+        <File path="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\compartitor.vhd" type="vhdl"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

@@ -16,7 +16,8 @@ def test_my_design_runner():
                proj_path / "src/oneBitLeftShift.vhd",
                proj_path / "src/twoBitLeftShift.vhd",
                proj_path / "src/fourBitLeftShift.vhd",
-               proj_path / "src/barrelShifter.vhd"]
+               proj_path / "src/barrelShifter.vhd",
+               proj_path / "src/compartitor.vhd"]
 
     runner = get_runner(sim)
     runner.build(
@@ -32,6 +33,7 @@ def test_my_design_runner():
     #runner.test(hdl_toplevel="fourBitLeftShift", test_module="tests.barrelShifter.fourBitLeftShiftTests,")
     #runner.test(hdl_toplevel="barrelShifter", test_module="tests.barrelShifter.barrelTests,")
     runner.test(hdl_toplevel="perceptron", test_module="tests.perceptronTests,")
+    #runner.test(hdl_toplevel="comparitor", test_module="tests.comparitor.comparitorTests,")
 
 
 if __name__ == "__main__":

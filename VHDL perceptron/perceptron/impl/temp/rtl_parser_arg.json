@@ -8,11 +8,6 @@
   },
   {
    "Library" : "work",
-   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
    "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
    "Type" : "vhdl"
   },
@@ -39,6 +34,16 @@
   {
    "Library" : "work",
    "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/compartitor.vhd",
    "Type" : "vhdl"
   }
  ],

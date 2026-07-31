@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/perceptron.vhd",
-    "InstLine" : 27,
+    "InstLine" : 34,
     "InstName" : "start",
     "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
     "ModuleLine" : 4,
@@ -43,7 +43,7 @@
    },
    {
     "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/perceptron.vhd",
-    "InstLine" : 32,
+    "InstLine" : 39,
     "InstName" : "offset",
     "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/eightBitAdder.vhd",
     "ModuleLine" : 4,
@@ -114,6 +114,14 @@
       "ModuleName" : "fullAdder"
      }
     ]
+   },
+   {
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/perceptron.vhd",
+    "InstLine" : 44,
+    "InstName" : "comp",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/compartitor.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "comparitor"
    }
   ]
  }
