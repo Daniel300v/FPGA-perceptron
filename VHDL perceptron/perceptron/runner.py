@@ -15,7 +15,8 @@ def test_my_design_runner():
                proj_path / "src/eightBitAdder.vhd",
                proj_path / "src/oneBitLeftShift.vhd",
                proj_path / "src/twoBitLeftShift.vhd",
-               proj_path / "src/fourBitLeftShift.vhd"]
+               proj_path / "src/fourBitLeftShift.vhd",
+               proj_path / "src/barrelShifter.vhd"]
 
     runner = get_runner(sim)
     runner.build(
@@ -29,6 +30,8 @@ def test_my_design_runner():
     #runner.test(hdl_toplevel="oneBitLeftShift", test_module="oneBitLeftShiftTests,")
     #runner.test(hdl_toplevel="twoBitLeftShift", test_module="twoBitLeftShiftTests,")
     #runner.test(hdl_toplevel="fourBitLeftShift", test_module="fourBitLeftShiftTests,")
+    runner.test(hdl_toplevel="barrelShifter", test_module="barrelTests,")
+
 
 if __name__ == "__main__":
     test_my_design_runner()

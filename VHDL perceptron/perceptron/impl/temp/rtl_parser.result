@@ -74,27 +74,37 @@
   ]
  },
  {
-  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
+  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
   "InstLine" : 4,
-  "InstName" : "oneBitLeftShift",
-  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
+  "InstName" : "barrelShifter",
+  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
   "ModuleLine" : 4,
-  "ModuleName" : "oneBitLeftShift"
- },
- {
-  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
-  "InstLine" : 4,
-  "InstName" : "twoBitLeftShift",
-  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
-  "ModuleLine" : 4,
-  "ModuleName" : "twoBitLeftShift"
- },
- {
-  "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
-  "InstLine" : 4,
-  "InstName" : "fourBitLeftShift",
-  "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
-  "ModuleLine" : 4,
-  "ModuleName" : "fourBitLeftShift"
+  "ModuleName" : "barrelShifter",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
+    "InstLine" : 35,
+    "InstName" : "start",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/oneBitLeftShift.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "oneBitLeftShift"
+   },
+   {
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
+    "InstLine" : 40,
+    "InstName" : "two",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/twoBitLeftShift.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "twoBitLeftShift"
+   },
+   {
+    "InstFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/barrelShifter.vhd",
+    "InstLine" : 45,
+    "InstName" : "four",
+    "ModuleFile" : "C:/Users/danie/Desktop/FPGA-perceptron/VHDL perceptron/perceptron/src/fourBitLeftShift.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "fourBitLeftShift"
+   }
+  ]
  }
 ]

@@ -1,7 +1,13 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1785503352" />
-    <testcase name="test1" classname="fourBitLeftShiftTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\fourBitLeftShiftTests.py" lineno="5" time="0.0" sim_time_ns="1.0" ratio_time="inf" />
-    <testcase name="test2" classname="fourBitLeftShiftTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\fourBitLeftShiftTests.py" lineno="16" time="0.0" sim_time_ns="1.0000000000000002" ratio_time="inf" />
+    <property name="random_seed" value="1785505005" />
+    <testcase name="test1" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="5" time="0.001003265380859375" sim_time_ns="1.0" ratio_time="996.745247148289" />
+    <testcase name="test2" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="17" time="0.0" sim_time_ns="1.0000000000000002" ratio_time="inf" />
+    <testcase name="test3" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="28" time="0.0" sim_time_ns="1.0" ratio_time="inf" />
+    <testcase name="test4" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="39" time="0.0" sim_time_ns="1.0000000000000004" ratio_time="inf" />
+    <testcase name="test5" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="50" time="0.0" sim_time_ns="1.0" ratio_time="inf" />
+    <testcase name="test6" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="62" time="0.0" sim_time_ns="1.0" ratio_time="inf" />
+    <testcase name="test7" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="73" time="0.0009920597076416016" sim_time_ns="1.0" ratio_time="1008.0038452295121" />
+    <testcase name="test8" classname="barrelTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\barrelTests.py" lineno="85" time="0.0" sim_time_ns="1.0" ratio_time="inf" />
   </testsuite>
 </testsuites>

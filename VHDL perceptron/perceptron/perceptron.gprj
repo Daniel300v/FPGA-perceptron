@@ -5,6 +5,7 @@
     <Version>5</Version>
     <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
     <FileList>
+        <File path="src/barrelShifter.vhd" type="file.vhdl" enable="1"/>
         <File path="src/eightBitAdder.vhd" type="file.vhdl" enable="1"/>
         <File path="src/fourBitLeftShift.vhd" type="file.vhdl" enable="1"/>
         <File path="src/fullAdder.vhd" type="file.vhdl" enable="1"/>

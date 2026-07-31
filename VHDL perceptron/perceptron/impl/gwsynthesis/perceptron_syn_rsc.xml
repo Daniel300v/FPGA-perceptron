@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="fourBitLeftShift" Lut="8" T_Lut="8(8)"/>
+<Module name="barrelShifter" T_Lut="20(0)">
+ <SubModule name="four" Lut="20" T_Lut="20(20)"/>
+</Module>
