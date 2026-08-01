@@ -17,7 +17,7 @@ Analyzing entity 'onebitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL 
 Analyzing architecture 'oneleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd":10)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd'
 Analyzing entity 'perceptron'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":4)
-Analyzing architecture 'perceptronlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":9)
+Analyzing architecture 'perceptronlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":10)
 Analyzing VHDL file 'C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd'
 Analyzing entity 'twobitleftshift'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":4)
 Analyzing architecture 'twoleftshiftlogic'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":10)
@@ -36,6 +36,8 @@ Processing 'eightBitAdder(eightBitAdderLogic)'("C:\Users\danie\Desktop\FPGA-perc
 Processing 'halfAdder(halfAdderLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
 Processing 'fullAdder(fullAdderLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\fullAdder.vhd":4)
 Processing 'comparitor(comparitorLogic)'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\compartitor.vhd":4)
+'others' clause is never selected("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":65)
+WARN  (EX4160) : Latch inferred for net 'weight[2]'("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
 NOTE  (EX0101) : Current top module is "perceptron"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
@@ -50,10 +52,29 @@ Running inference ...
 Running technical mapping ...
 [60%] Tech-Mapping Phase 0 completed
 [65%] Tech-Mapping Phase 1 completed
+WARN  (DI0003) : Latch inferred for net 'bias[7]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[6]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[5]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[4]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[3]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'bias[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[7]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[6]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[5]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[4]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[3]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'threshold[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'weight[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'weight[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
+WARN  (DI0003) : Latch inferred for net 'weight[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":67)
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "eightBitAdder" instantiated to "offset" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":39)
+WARN  (NL0002) : The module "eightBitAdder" instantiated to "offset" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":44)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full1" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":44)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full2" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":51)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full3" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":58)
@@ -62,7 +83,7 @@ WARN  (NL0002) : The module "fullAdder" instantiated to "full5" is swept in opti
 WARN  (NL0002) : The module "fullAdder" instantiated to "full6" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":79)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full7" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":86)
 WARN  (NL0002) : The module "halfAdder" instantiated to "start" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\eightBitAdder.vhd":37)
-WARN  (NL0002) : The module "barrelShifter" instantiated to "start" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":34)
+WARN  (NL0002) : The module "barrelShifter" instantiated to "start" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\perceptron.vhd":39)
 WARN  (NL0002) : The module "fourBitLeftShift" instantiated to "four" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":45)
 WARN  (NL0002) : The module "oneBitLeftShift" instantiated to "start" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":35)
 WARN  (NL0002) : The module "twoBitLeftShift" instantiated to "two" is swept in optimizing("C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\src\barrelShifter.vhd":40)
