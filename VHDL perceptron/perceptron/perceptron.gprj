@@ -14,5 +14,6 @@
         <File path="src/oneBitLeftShift.vhd" type="file.vhdl" enable="1"/>
         <File path="src/perceptron.vhd" type="file.vhdl" enable="1"/>
         <File path="src/twoBitLeftShift.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/perceptron.cst" type="file.cst" enable="1"/>
     </FileList>
 </Project>

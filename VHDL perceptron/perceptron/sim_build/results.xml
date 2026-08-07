@@ -1,10 +1,11 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1785583868" />
-    <testcase name="test1" classname="tests.perceptronTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="5" time="0.0010399818420410156" sim_time_ns="1.0" ratio_time="961.5552498853737" />
-    <testcase name="test2" classname="tests.perceptronTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="21" time="0.0" sim_time_ns="1.0000000000000002" ratio_time="inf" />
-    <testcase name="test3" classname="tests.perceptronTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="32" time="0.0009698867797851562" sim_time_ns="1.0" ratio_time="1031.0481809242872" />
-    <testcase name="test4" classname="tests.perceptronTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="44" time="0.0" sim_time_ns="1.0000000000000004" ratio_time="inf" />
-    <testcase name="test5" classname="tests.perceptronTests" file="C:\Users\danie\Desktop\FPGA-perceptron\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="55" time="0.0011105537414550781" sim_time_ns="5.000000000000001" ratio_time="4502.25848003435" />
+    <property name="random_seed" value="1786100193" />
+    <testcase name="test1" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="5" time="0.001806497573852539" sim_time_ns="1.0" ratio_time="553.5573445954864" />
+    <testcase name="test2" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="21" time="9.274482727050781e-05" sim_time_ns="1.0000000000000002" ratio_time="10782.272493573268" />
+    <testcase name="test3" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="32" time="6.461143493652344e-05" sim_time_ns="1.0" ratio_time="15477.136531365313" />
+    <testcase name="test4" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="44" time="4.935264587402344e-05" sim_time_ns="1.0000000000000004" ratio_time="20262.338164251218" />
+    <testcase name="test5" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="55" time="0.0002727508544921875" sim_time_ns="5.000000000000001" ratio_time="18331.748251748257" />
+    <testcase name="test6" classname="tests.perceptronTests" file="C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\tests\perceptronTests.py" lineno="94" time="3.4809112548828125e-05" sim_time_ns="1.0" ratio_time="28728.109589041094" />
   </testsuite>
 </testsuites>

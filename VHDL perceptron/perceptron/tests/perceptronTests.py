@@ -91,4 +91,15 @@ async def test5(dut):
     print(dut.sink.value)
     assert dut.sink.value == 0
     
+@cocotb.test()
+async def test6(dut):
+    """null"""
 
+    dut.source.value = "00000000"
+    dut.selector.value = "00"
+
+
+    await Timer(1, unit="ns")
+
+
+    assert dut.sink.value == 0
