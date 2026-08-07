@@ -7,13 +7,11 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'selector_d[1]' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'selector_d[1]' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -27,5 +25,5 @@ Generate file "C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptr
 Generate file "C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\impl\pnr\perceptron.rpt.html" completed
 Generate file "C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\impl\pnr\perceptron.rpt.txt" completed
 Generate file "C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\impl\pnr\perceptron.tr.html" completed
-Fri Aug  7 12:00:44 2026
+Fri Aug  7 13:05:15 2026
 

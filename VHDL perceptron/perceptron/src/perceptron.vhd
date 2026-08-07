@@ -33,23 +33,26 @@ architecture perceptronLogic of perceptron is
     signal weight : std_logic_vector(2 downto 0) := "010";
     signal bias : std_logic_vector(7 downto 0) := "00000101";
     signal threshold : std_logic_vector(7 downto 0) := "00010000";
+    signal drain : std_logic_vector (7 downto 0);
     begin
-
-        
+              
         start: barrelShifter
         port map (barrelIn => source,
-             totalShift => weight,
+             totalShift => "010",
              barrelOut => carry);
 
         offset: eightBitAdder
         port map (inA => carry,
-             inB => bias,
+             inB => "00000101",
              SUM => neuronProduct);
-            
+
+        --neuronProduct <= "00000001";
+
         comp: comparitor
         port map (perceved => neuronProduct,
-                  static => threshold,
+                  static => "00010000",
                   activation => sink);
+    
     process(selector, source)
     begin
         case selector is

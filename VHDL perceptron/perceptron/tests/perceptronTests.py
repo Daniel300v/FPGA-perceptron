@@ -4,17 +4,57 @@ from cocotb.triggers import Timer
 
 @cocotb.test()
 async def test1(dut):
-    """(9 * 4) + 5 is greater than 16"""
+    """(10 * 4) + 5 is greater than 16"""
 
     dut.source.value = "00001010"
     dut.selector.value = "00"
 
 
     await Timer(1, unit="ns")
+    assert dut.sink.value == 1
+    
+@cocotb.test()
+async def test7(dut):
+    """(10 * 4) + 5 is greater than 16"""
 
-##    print (dut.carry.value)
-##    print (dut.neuronProduct.value)
-##    print (dut.sink.value)
+    dut.source.value = "00000001"
+    dut.selector.value = "00"
+
+
+    await Timer(1, unit="ns")
+    assert dut.sink.value == 0
+
+@cocotb.test()
+async def test8(dut):
+    """(10 * 4) + 5 is greater than 16"""
+
+    dut.source.value = "00000010"
+    dut.selector.value = "00"
+
+
+    await Timer(1, unit="ns")
+    assert dut.sink.value == 0
+
+@cocotb.test()
+async def test9(dut):
+    """(10 * 4) + 5 is greater than 16"""
+
+    dut.source.value = "00000100"
+    dut.selector.value = "00"
+
+
+    await Timer(1, unit="ns")
+    assert dut.sink.value == 1
+
+@cocotb.test()
+async def test10(dut):
+    """(10 * 4) + 5 is greater than 16"""
+
+    dut.source.value = "00001000"
+    dut.selector.value = "00"
+
+
+    await Timer(1, unit="ns")
     assert dut.sink.value == 1
 
 

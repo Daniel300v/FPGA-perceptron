@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="perceptron" Register="19" Lut="1" T_Register="19(19)" T_Lut="49(1)">
- <SubModule name="comp" Lut="48" T_Lut="48(48)"/>
+<Module name="perceptron" T_Lut="2(0)">
+ <SubModule name="comp" Lut="2" T_Lut="2(2)"/>
 </Module>

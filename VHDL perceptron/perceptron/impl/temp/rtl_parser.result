@@ -117,7 +117,7 @@
    },
    {
     "InstFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/perceptron.vhd",
-    "InstLine" : 49,
+    "InstLine" : 51,
     "InstName" : "comp",
     "ModuleFile" : "C:/Users/Daniel/Desktop/FPGA-perceptron-/VHDL perceptron/perceptron/src/compartitor.vhd",
     "ModuleLine" : 4,
