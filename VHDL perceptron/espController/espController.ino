@@ -1,10 +1,12 @@
 
 
-int selectorPins[2] = {18,17};
+int selectorPins[2] = {8,7};
 int dataPins[8] = {13,12,27,33,15,32,14,20};
 int returnPin = 15;
 
 int pinIndex = 0;
+
+bool begin = true;
 
 void setup() {
 
@@ -17,8 +19,8 @@ void setup() {
   pinMode(dataPins[6], OUTPUT);
   pinMode(dataPins[7], OUTPUT);
 
-  // pinMode(selectorPins[0], OUTPUT);
-  // pinMode(selectorPins[1], OUTPUT);
+  pinMode(selectorPins[0], OUTPUT);
+  pinMode(selectorPins[1], OUTPUT);
 
   // pinMode(returnPin, INPUT);
 
@@ -33,8 +35,8 @@ void setup() {
   digitalWrite(dataPins[6], LOW);
   digitalWrite(dataPins[7], LOW);
 
-  // digitalWrite(selectorPins[0], LOW);
-  // digitalWrite(selectorPins[1], LOW);
+  digitalWrite(selectorPins[0], LOW);
+  digitalWrite(selectorPins[1], LOW);
 
   Serial.begin(115200);
 
@@ -45,25 +47,44 @@ void loop() {
   if (Serial.available()) {
     char in = Serial.read();
     
-    
-
-    if (in == '0'){
-      digitalWrite(dataPins[pinIndex], LOW);
-      Serial.print("0");
-      pinIndex++;
-    }
-    else if (in == '1'){
-      digitalWrite(dataPins[pinIndex], HIGH);
-      Serial.print("1");
-      pinIndex++;
+    if (begin){
+      if (in == '0'){
+        digitalWrite(selectorPins[0], LOW);
+        digitalWrite(selectorPins[1], LOW);
+      }
+      else if (in == '1'){
+        digitalWrite(selectorPins[0], HIGH);
+        digitalWrite(selectorPins[1], LOW);
+      }
+      else if (in == '2'){
+        digitalWrite(selectorPins[0], LOW);
+        digitalWrite(selectorPins[1], HIGH);
+      }
+      else if (in == '3'){
+        digitalWrite(selectorPins[0], HIGH);
+        digitalWrite(selectorPins[1], HIGH);
+      }
+      begin = false;
     }
     else{
-      pinIndex = 0;
-      Serial.println("\n");
+      if (in == '0'){
+        digitalWrite(dataPins[pinIndex], LOW);
+        Serial.print("0");
+        pinIndex++;
+      }
+      else if (in == '1'){
+        digitalWrite(dataPins[pinIndex], HIGH);
+        Serial.print("1");
+        pinIndex++;
+      }
+      else if (in == ' '){
+        
+      }
+      else{
+        pinIndex = 0;
+        Serial.println("\n");
+        begin = true;
+      }
     }
-    
   }
-
-  //delay(1000);
-
 }

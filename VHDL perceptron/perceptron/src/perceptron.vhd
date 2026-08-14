@@ -65,7 +65,7 @@ architecture perceptronLogic of perceptron is
             when "11" =>
                 threshold <= source;
             when others =>
-                null;
+                sink <= '0';
         end case;
     end process;
 
