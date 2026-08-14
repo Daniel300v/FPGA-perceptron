@@ -2,11 +2,11 @@
 
 int selectorPins[2] = {8,7};
 int dataPins[8] = {13,12,27,33,15,32,14,20};
-int returnPin = 15;
+int writePin = 21;
 
 int pinIndex = 0;
 
-bool begin = true;
+bool selector = false;
 
 void setup() {
 
@@ -21,6 +21,8 @@ void setup() {
 
   pinMode(selectorPins[0], OUTPUT);
   pinMode(selectorPins[1], OUTPUT);
+
+  pinMode(writePin, OUTPUT);
 
   // pinMode(returnPin, INPUT);
 
@@ -38,16 +40,25 @@ void setup() {
   digitalWrite(selectorPins[0], LOW);
   digitalWrite(selectorPins[1], LOW);
 
+  digitalWrite(writePin, LOW);
+
   Serial.begin(115200);
 
+}
+
+void pulseWrite(){
+  Serial.println("WRITE");
+  digitalWrite(writePin, HIGH);
+  delay(1);
+  digitalWrite(writePin, LOW);
 }
 
 void loop() {
 
   if (Serial.available()) {
-    char in = Serial.read();
+    char in = Serial.read(); 
     
-    if (begin){
+    if (selector){
       if (in == '0'){
         digitalWrite(selectorPins[0], LOW);
         digitalWrite(selectorPins[1], LOW);
@@ -55,16 +66,19 @@ void loop() {
       else if (in == '1'){
         digitalWrite(selectorPins[0], HIGH);
         digitalWrite(selectorPins[1], LOW);
+        pulseWrite();
       }
       else if (in == '2'){
         digitalWrite(selectorPins[0], LOW);
         digitalWrite(selectorPins[1], HIGH);
+        pulseWrite();
       }
       else if (in == '3'){
         digitalWrite(selectorPins[0], HIGH);
         digitalWrite(selectorPins[1], HIGH);
+        pulseWrite();
       }
-      begin = false;
+      selector = false;
     }
     else{
       if (in == '0'){
@@ -78,12 +92,12 @@ void loop() {
         pinIndex++;
       }
       else if (in == ' '){
-        
+        selector = true;
       }
       else{
         pinIndex = 0;
         Serial.println("\n");
-        begin = true;
+        selector = false;
       }
     }
   }

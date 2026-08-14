@@ -23,7 +23,7 @@ Analyzing entity 'onebitleftshift'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHD
 Analyzing architecture 'oneleftshiftlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\oneBitLeftShift.vhd":10)
 Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd'
 Analyzing entity 'perceptron'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":4)
-Analyzing architecture 'perceptronlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":10)
+Analyzing architecture 'perceptronlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":11)
 Analyzing VHDL file 'C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd'
 Analyzing entity 'twobitleftshift'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":4)
 Analyzing architecture 'twoleftshiftlogic'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\twoBitLeftShift.vhd":10)
@@ -36,11 +36,8 @@ Processing 'eightBitAdder(eightBitAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-per
 Processing 'halfAdder(halfAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\halfAdder.vhd":4)
 Processing 'fullAdder(fullAdderLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\fullAdder.vhd":4)
 Processing 'comparitor(comparitorLogic)'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\compartitor.vhd":4)
-'others' clause is never selected("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":68)
-WARN  (EX4160) : Latch inferred for net 'weight[2]'("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":70)
 NOTE  (EX0101) : Current top module is "perceptron"
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input selector is unused("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":6)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -56,7 +53,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "eightBitAdder" instantiated to "offset" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":44)
+WARN  (NL0002) : The module "eightBitAdder" instantiated to "offset" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":46)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full1" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":44)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full2" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":51)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full3" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":58)
@@ -65,7 +62,7 @@ WARN  (NL0002) : The module "fullAdder" instantiated to "full5" is swept in opti
 WARN  (NL0002) : The module "fullAdder" instantiated to "full6" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":79)
 WARN  (NL0002) : The module "fullAdder" instantiated to "full7" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":86)
 WARN  (NL0002) : The module "halfAdder" instantiated to "start" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\eightBitAdder.vhd":37)
-WARN  (NL0002) : The module "barrelShifter" instantiated to "start" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":39)
+WARN  (NL0002) : The module "barrelShifter" instantiated to "start" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\perceptron.vhd":41)
 WARN  (NL0002) : The module "fourBitLeftShift" instantiated to "four" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\barrelShifter.vhd":45)
 WARN  (NL0002) : The module "oneBitLeftShift" instantiated to "start" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\barrelShifter.vhd":35)
 WARN  (NL0002) : The module "twoBitLeftShift" instantiated to "two" is swept in optimizing("C:\Users\Daniel\Desktop\FPGA-perceptron-\VHDL perceptron\perceptron\src\barrelShifter.vhd":40)

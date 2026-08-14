@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Fri Aug 14 15:49:06 2026
+  <Created Time>:Fri Aug 14 17:03:06 2026
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Placement Phase 1: CPU time = 0h 0m 0.035s, Elapsed time = 0h 0m 0.036s
-    Placement Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Placement Phase 3: CPU time = 0h 0m 0.413s, Elapsed time = 0h 0m 0.413s
-    Total Placement: CPU time = 0h 0m 0.449s, Elapsed time = 0h 0m 0.45s
+    Placement Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
+    Placement Phase 1: CPU time = 0h 0m 0.035s, Elapsed time = 0h 0m 0.035s
+    Placement Phase 2: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
+    Placement Phase 3: CPU time = 0h 0m 0.414s, Elapsed time = 0h 0m 0.415s
+    Total Placement: CPU time = 0h 0m 0.452s, Elapsed time = 0h 0m 0.453s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.072s, Elapsed time = 0h 0m 0.072s
-    Routing Phase 2: CPU time = 0h 0m 0.044s, Elapsed time = 0h 0m 0.045s
+    Routing Phase 1: CPU time = 0h 0m 0.067s, Elapsed time = 0h 0m 0.066s
+    Routing Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.046s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.116s, Elapsed time = 0h 0m 0.117s
+    Total Routing: CPU time = 0h 0m 0.113s, Elapsed time = 0h 0m 0.112s
  Generate output files:
-    CPU time = 0h 0m 0.515s, Elapsed time = 0h 0m 0.515s
+    CPU time = 0h 0m 0.512s, Elapsed time = 0h 0m 0.512s
 
- Total Time and Memory Usage: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 281MB
+ Total Time and Memory Usage: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 286MB
 
 
 3. Resource Usage Summary
@@ -40,18 +40,18 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 2/8640                              |  <1%
-    --LUT,ALU,ROM16           | 2(2 LUT, 0 ALU, 0 ROM16)            | -
+  Logic                       | 45/8640                             |  <1%
+    --LUT,ALU,ROM16           | 45(45 LUT, 0 ALU, 0 ROM16)          | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 0/6693                              |  0%
+  Register                    | 19/6693                             |  <1%
     --Logic Register as Latch | 0/6480                              |  0%
-    --Logic Register as FF    | 0/6480                              |  0%
+    --Logic Register as FF    | 19/6480                             |  <1%
     --I/O Register as Latch   | 0/213                               |  0%
     --I/O Register as FF      | 0/213                               |  0%
-  CLS                         | 1/4320                              |  <1%
-  I/O Port                    | 11/71                               |  16%
-  I/O Buf                     | 7                                   | -
-    --Input Buf               | 6                                   | -
+  CLS                         | 36/4320                             |  <1%
+  I/O Port                    | 12/71                               |  17%
+  I/O Buf                     | 12                                  | -
+    --Input Buf               | 11                                  | -
     --Output Buf              | 1                                   | -
     --Inout Buf               | 0                                   | -
   ================================================================================
@@ -64,7 +64,7 @@
   I/O Bank  | Usage       | Utilization 
   --------------------------------------
   bank 1   | 0/25        | 0%          
-  bank 2   | 11/23       | 48%         
+  bank 2   | 12/23       | 53%         
   bank 3   | 0/23        | 0%          
   ======================================
 
@@ -74,7 +74,7 @@
   ------------------------------------------
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
-  PRIMARY       | 0/8           | 0%
+  PRIMARY       | 1/8           | 13%
   LW            | 0/8           | 0%
   GCLK_PIN      | 0/3           | 0%
   ==========================================
@@ -85,6 +85,7 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
+  writ_d         | PRIMARY        |  BL
   ===========================================
 
 
@@ -103,6 +104,7 @@ source[6]    | -         | 28/2          | Y          | in    | IOB11[B] | -    
 source[7]    | -         | 29/2          | Y          | in    | IOB13[A] | -               | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3       
 selector[0]  | -         | 30/2          | Y          | in    | IOB13[B] | -               | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3       
 selector[1]  | -         | 33/2          | Y          | in    | IOB23[A] | -               | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3       
+writ         | -         | 40/2          | Y          | in    | IOB33[B] | -               | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3       
 sink         | -         | 34/2          | Y          | out   | IOB23[B] | -               | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 3.3       
 ====================================================================================================================================================================================================================
 
@@ -155,7 +157,7 @@ Loc./Bank| Signal       | Dir.  | Site     | CFG             | IO Type  | Drive 
 37/2     | source[0]    | in    | IOB31[A] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 38/2     | -            | in    | IOB31[B] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 39/2     | source[2]    | in    | IOB33[A] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
-40/2     | -            | in    | IOB33[B] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
+40/2     | writ         | in    | IOB33[B] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 41/2     | -            | in    | IOB41[A] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 42/2     | -            | in    | IOB41[B] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 47/2     | -            | in    | IOB43[B] | -               | LVCMOS33 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
