@@ -5,6 +5,7 @@ entity perceptron is
     port(source : in std_logic_vector(7 downto 0);
          selector  : in std_logic_vector (1 downto 0);
          writ : in std_logic;
+         debug : out std_logic_vector(7 downto 0):= "00000101";
          sink : out std_logic);
 end perceptron;
 
@@ -55,6 +56,8 @@ architecture perceptronLogic of perceptron is
                   static => threshold,
                   activation => sink);
     
+    debug <= threshold;
+
     process(writ)
     begin
         if rising_edge(writ) then
