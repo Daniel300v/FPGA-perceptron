@@ -32,9 +32,9 @@ architecture perceptronLogic of perceptron is
     signal carry : std_logic_vector (7 downto 0);
     signal neuronProduct : std_logic_vector (7 downto 0);
     
-    signal weight : std_logic_vector(2 downto 0) := "010";
-    signal bias : std_logic_vector(7 downto 0) := "00000101";
-    signal threshold : std_logic_vector(7 downto 0) := "00010000";
+    signal weight : std_logic_vector(2 downto 0);-- := "010";
+    signal bias : std_logic_vector(7 downto 0);-- := "00000101";
+    signal threshold : std_logic_vector(7 downto 0);-- := "00010000";
 
     signal drain : std_logic_vector (7 downto 0);
     begin
@@ -56,7 +56,7 @@ architecture perceptronLogic of perceptron is
                   static => threshold,
                   activation => sink);
     
-    debug <= threshold;
+    debug <= bias;
 
     process(writ)
     begin

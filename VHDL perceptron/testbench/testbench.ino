@@ -2,6 +2,7 @@ int selectorPins[2] = {8,7};
 int dataPins[8] = {13,12,27,33,15,32,14,20};
 int writePin = 21;
 int receiver = 19;
+int delayValue = 0;
 
 void setupPins(){
   pinMode(dataPins[0], OUTPUT);
@@ -38,7 +39,7 @@ void setupPins(){
 void pulseWrite(){
   Serial.println("WRITE");
   digitalWrite(writePin, HIGH);
-  delay(1);
+  delay(delayValue);
   digitalWrite(writePin, LOW);
 }
 
@@ -80,7 +81,7 @@ void makeBias(char value[]){
   pulseWrite();
   setDataPins(value);
   pulseWrite();
-  delay(500);
+  delay(delayValue);
 }
 
 void makeWeight(char value[]){
@@ -88,7 +89,15 @@ void makeWeight(char value[]){
   pulseWrite();
   setDataPins(value);
   pulseWrite();
-  delay(500);
+  delay(delayValue);
+}
+
+void makeTheshold(char value[]){
+  setSelectorPins("11");
+  pulseWrite();
+  setDataPins(value);
+  pulseWrite();
+  delay(delayValue);
 }
 
 int assurt(int expected){
@@ -108,7 +117,7 @@ void test1(){
   setSelectorPins("00");
   pulseWrite();
   setDataPins("00010000");
-  delay(500);
+  delay(delayValue);
   int ret = readReciever();
   Serial.println("------------------------");
   if (ret == 1){
@@ -125,7 +134,7 @@ void test2(){
   setSelectorPins("00");
   pulseWrite();
   setDataPins("00000100");
-  delay(500);
+  delay(delayValue);
   int ret = readReciever();
   Serial.println("------------------------");
   if (ret == 0){
@@ -143,7 +152,7 @@ void test3(){
   pulseWrite();
   setDataPins("00000010");
   pulseWrite();
-  delay(500);
+  delay(delayValue);
   int ret = readReciever();
   Serial.println("------------------------");
   Serial.println("Check LED's");
@@ -156,7 +165,7 @@ void test4(){
   pulseWrite();
   setDataPins("00000010");
   pulseWrite();
-  delay(500);
+  delay(delayValue);
   int ret = readReciever();
   Serial.println("------------------------");
   Serial.println("Check LED's");
@@ -169,7 +178,7 @@ void test5(){
   pulseWrite();
   setDataPins("00000001");
   pulseWrite();
-  delay(500);
+  delay(delayValue);
   int ret = readReciever();
   Serial.println("------------------------");
   Serial.println("Check LED's");
@@ -180,6 +189,7 @@ void test6(){
   Serial.println("Test 6 -- forward x4 back forward x4");
   bool passed = true;
 
+  makeTheshold("00010000");
   makeWeight("00000010");
   makeBias("00000101");
 
@@ -187,19 +197,19 @@ void test6(){
   pulseWrite();
 
   setDataPins("00000110");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(1);
 
   setDataPins("00000111");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(1);
 
   setDataPins("00000010");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(0);
 
-  setDataPins("00000100");
-  delay(500);
+  setDataPins("00000000");
+  delay(delayValue);
   passed = passed & assurt(0);
 
   makeWeight("00000011");
@@ -208,19 +218,19 @@ void test6(){
   setSelectorPins("00");
   pulseWrite();
   setDataPins("00000101");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(1);
 
   setDataPins("00000111");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(1);
 
   setDataPins("00000001");
-  delay(500);
+  delay(delayValue);
   passed = passed & assurt(0);
 
-  setDataPins("00000011");
-  delay(500);
+  setDataPins("00000000");
+  delay(delayValue);
   passed = passed & assurt(0);
 
   Serial.println("------------------------");
@@ -240,11 +250,11 @@ void tests(){
   Serial.println("RUNNING TESTS");
   Serial.println("------------------------");
   //test1();
-  test2();
+  //test2();
   //test3();
   //test4();
   //test5();
-  //test6();
+  test6();
 }
 
 
