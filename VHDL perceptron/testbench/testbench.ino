@@ -1,7 +1,7 @@
 int selectorPins[2] = {8,7};
 int dataPins[8] = {13,12,27,33,15,32,14,20};
-int writePin = 21;
-int receiver = 19;
+int writePin = 19;
+int receiver = 21;
 int delayValue = 0;
 
 void setupPins(){
