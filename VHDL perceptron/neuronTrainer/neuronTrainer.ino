@@ -7,24 +7,148 @@ int delayValue = 0;
 int xWeight = 0;
 int bias = 0;
 int learningRate = 1;
+int threashold = 100;
 
 struct Sample {
     int x;
     int target;
 };
 
+//test set for just the bias NO WEIGHT _________
+
+// std::vector<Sample> trainingData = {
+//     {10,0},
+//     {20,0},
+//     {30,0},
+//     {40,0},
+//     {45,0},
+//     {48,0},
+//     {49,0},
+
+//     {50,1},
+//     {51,1},
+//     {55,1},
+//     {60,1},
+//     {70,1},
+//     {80,1},
+//     {90,1},
+//     {100,1}
+// };
+
+// std::vector<Sample> testData = {
+//     {5,0},
+//     {15,0},
+//     {25,0},
+//     {35,0},
+//     {42,0},
+//     {44,0},
+//     {47,0},
+//     {49,0},
+
+//     {50,1},
+//     {52,1},
+//     {53,1},
+//     {57,1},
+//     {65,1},
+//     {75,1},
+//     {85,1},
+//     {95,1},
+//     {105,1}
+// };
+
+//test set for just the bias NO WEIGHT ^^^^^^^^^^
+
+//test set for just the weight NO BIAS _________
+
+// std::vector<Sample> trainingData = {
+//     {10,0},
+//     {20,0},
+//     {30,0},
+//     {40,0},
+//     {45,0},
+//     {48,0},
+//     {49,0},
+
+//     {50,1},
+//     {51,1},
+//     {55,1},
+//     {60,1},
+//     {70,1},
+//     {80,1},
+//     {90,1},
+//     {100,1}
+// };
+
+// std::vector<Sample> testData = {
+//     {5,0},
+//     {15,0},
+//     {25,0},
+//     {35,0},
+//     {42,0},
+//     {44,0},
+//     {47,0},
+
+//     {52,1},
+//     {53,1},
+//     {57,1},
+//     {65,1},
+//     {75,1},
+//     {85,1},
+//     {95,1},
+//     {105,1}
+// };
+
+//test set for just the weight NO BIAS ^^^^^^^^^^
+
+//test set for both weight and bias _________
+
 std::vector<Sample> trainingData = {
-    {17,0},  {142,1}, {63,0},  {201,1},
-    {91,0},  {128,1}, {34,0},  {176,1},
-    {119,0}, {225,1}, {48,0},  {153,1},
-    {72,0},  {194,1}, {7,0},   {238,1},
-    {105,0}, {131,1}, {56,0},  {167,1},
-    {123,0}, {215,1}, {28,0},  {149,1},
-    {84,0},  {187,1}, {42,0},  {255,1},
-    {66,0},  {137,1}, {14,0},  {219,1},
-    {99,0},  {160,1}, {37,0},  {202,1},
-    {110,0}, {129,1}, {52,0},  {234,1}
+    {10,0},
+    {15,0},
+    {20,0},
+    {25,0},
+    {30,0},
+    {32,0},
+    {35,0},
+    {38,0},
+    {39,0},
+
+    {40,1},
+    {41,1},
+    {42,1},
+    {45,1},
+    {50,1},
+    {55,1},
+    {60,1},
+    {70,1},
+    {80,1}
 };
+
+std::vector<Sample> testData = {
+    {5,0},
+    {12,0},
+    {18,0},
+    {22,0},
+    {28,0},
+    {33,0},
+    {36,0},
+    {37,0},
+
+    {43,1},
+    {44,1},
+    {46,1},
+    {48,1},
+    {52,1},
+    {57,1},
+    {65,1},
+    {75,1},
+    {90,1}
+};
+
+//test set for both weight and bias ^^^^^^^^^^
+
+
+//test set for both weight and bias
 
 void setupPins(){
   pinMode(dataPins[0], OUTPUT);
@@ -59,7 +183,7 @@ void setupPins(){
 }
 
 void pulseWrite(){
-  Serial.println("WRITE");
+  //Serial.println("WRITE");
   digitalWrite(writePin, HIGH);
   delay(delayValue);
   digitalWrite(writePin, LOW);
@@ -74,8 +198,8 @@ void setDataPins(char value[]){
       digitalWrite(dataPins[7- i], HIGH);
     }
   }
-  Serial.print("Data pins set to: ");
-  Serial.println(value);
+  //Serial.print("Data pins set to: ");
+  //Serial.println(value);
 }
 
 void setSelectorPins(char value[]){
@@ -87,14 +211,14 @@ void setSelectorPins(char value[]){
       digitalWrite(selectorPins[1-i], HIGH);
     }
   }
-  Serial.print("Selector pins set to: ");
-  Serial.println(value);
+  //Serial.print("Selector pins set to: ");
+  //Serial.println(value);
 }
 
 int readReciever(){
   int val = digitalRead(receiver);
-  Serial.print("Receiver pin value: ");
-  Serial.println(val);
+  //Serial.print("Receiver pin value: ");
+  //Serial.println(val);
   return(val);
 }
 
@@ -122,17 +246,7 @@ void makeTheshold(char value[]){
   delay(delayValue);
 }
 
-int assurt(int expected){
-  int ret = readReciever();
-  if (ret == expected){
-    Serial.println("VALID");
-    return (1);
-  }
-  else{
-    Serial.println("INVALID");
-    return (0);
-  }
-}
+
 
 char* intToBinary8(int number) {
     static char value[9];
@@ -158,10 +272,29 @@ int neuron(Sample currentSample){
   return (readReciever());
 }
 
+void updateValues(int error){
+  if (error > 0)
+  {
+    // Output was too low
+    if (xWeight < 7)
+      xWeight++;
+  }
+  else if (error < 0)
+  {
+    // Output was too high
+    if (xWeight > 0)
+      xWeight--;
+  }
+  bias += learningRate * error;// update offset
+}
+
+
+
 // run the training data
 void training()
 {
     bool changed;
+    int maxEpoch = 1000;
     int epoch = 0;
     //repeat training until no changes are made
     do
@@ -169,7 +302,7 @@ void training()
         // start epoch
         epoch++;
         changed = false;
-        Serial.println("epoch:" + String(epoch));
+        //Serial.println("epoch:" + String(epoch));
 
         // train across the training set
         for (auto currentSample : trainingData)
@@ -179,15 +312,28 @@ void training()
 
             if (error != 0)
             {
-                xWeight += learningRate * error * currentSample.x;// update weight
-                bias += learningRate * error;// update offset
+                updateValues(error);
                 update();
                 changed = true;
             }
         }
-    }while (changed);
+    }while (changed && epoch < maxEpoch);
 }
 
+void test()
+{
+    int correct = 0;
+    for (auto currentSample : testData)
+    {
+        if (neuron(currentSample) == currentSample.target)
+        {
+            correct++;
+        }
+    }
+    // output the results
+    Serial.println("correct:" + String(correct));
+    Serial.println("total:" + String(testData.size()));
+}
 
 
 
@@ -200,6 +346,7 @@ void neuralNetwork(){
   training();
   Serial.println("weight:" + String(xWeight));
   Serial.println("Bias:" + String(bias));
+  test();
  
 
 }
@@ -218,7 +365,7 @@ void loop() {
   if (Serial.available()) {
     char in = Serial.read(); 
     if (in == '\n'){
-      makeTheshold(intToBinary8(127));
+      makeTheshold(intToBinary8(threashold));
       neuralNetwork();
     }
   }
