@@ -1,5 +1,19 @@
 # FPGA-perceptron-
-This is an experiment to create an event driven FPGA based perceptron
+This repository is an investigation into how custom hardware may be able to improve the performance of neural networks. To this end, a restricted scenario has been constructed to give an environment in which a proof of concept can be created.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 python version 3.12.0
 
@@ -12,7 +26,7 @@ VHDL development environment GOWIN
 
 ## Eight bit perceptron theory
 
-The current implementation of the perceptron adheres to a few limitations. Firstly, it will only be limited to eight bit unsigned integer values. Secondly, multiplication will be replaced with bit shifting. Thirdly, the activation function used will be a simple threshold funchtion.
+The current implementation of the perceptron adheres to a few limitations. Firstly, it will only be limited to eight bit unsigned integer values. Secondly, multiplication will be replaced with bit shifting. Thirdly, the activation function used will be a simple threshold function.
 
 
 ## Architecture
