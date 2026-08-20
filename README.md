@@ -44,7 +44,10 @@ VHDL development environment GOWIN
 
 ## Eight bit perceptron theory
 
-The current implementation of the perceptron adheres to a few limitations. Firstly, it will only be limited to eight bit unsigned integer values. Secondly, multiplication will be replaced with bit shifting. Thirdly, the activation function used will be a simple threshold function.
+The current implementation of the perceptron adheres to a few limitations:
+- The system will limited to eight bit unsigned integer values.
+- Multiplication will be replaced with bit shifting.
+- The activation function used will be a simple threshold function
 
 
 ## Architecture
