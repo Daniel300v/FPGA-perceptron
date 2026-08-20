@@ -26,7 +26,8 @@ This repository is an investigation into how custom hardware may be able to impr
 ```
 
 #Project limitations
-To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, 
+To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, some limitations have been placed on the project. 
+
 
 
 
