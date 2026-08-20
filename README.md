@@ -32,7 +32,7 @@ To reduce the complexity of the project, so that a prototype can be produced wit
 
 
 
-
+#How to run
 python version 3.12.0
 
 python testing framework: cocotb
