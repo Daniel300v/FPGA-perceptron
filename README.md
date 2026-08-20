@@ -1,13 +1,6 @@
 # FPGA-perceptron-
 This repository is an investigation into how custom hardware may be able to improve the performance of neural networks. To this end, a restricted scenario has been constructed to give an environment in which a proof of concept can be created. The principle idea is that designing a custom arithmetic logic unit on an FPGA will allow the FPGA to function as the core internals of a perceptron, while the training of the parameters of the perceptron is handled by an external device, such as a microcontroller.
-
-
-
-
-
-
-
-                         
+                    
                         
 ```mermaid                       
  flowchart LR
@@ -19,7 +12,7 @@ This repository is an investigation into how custom hardware may be able to impr
         B1["Perceptron"]
     end
 
-    subgraph A["CONTROLLER"]
+    subgraph A["MICROCONTROLLER"]
         direction TB
         A1["Loading Data"]
         A2["Training parameters"]
@@ -32,6 +25,8 @@ This repository is an investigation into how custom hardware may be able to impr
     B1 -->|"RESULT"| A1
 ```
 
+#Project limitations
+To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, 
 
 
 
