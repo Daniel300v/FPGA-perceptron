@@ -25,14 +25,14 @@ This repository is an investigation into how custom hardware may be able to impr
     B1 -->|"RESULT"| A1
 ```
 
-#Project limitations
+##Project limitations
 To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, some limitations have been placed on the project. 
 
 
 
 
 
-#How to run
+##How to run
 python version 3.12.0
 
 python testing framework: cocotb
