@@ -147,9 +147,7 @@ std::vector<Sample> testData = {
 
 //test set for both weight and bias ^^^^^^^^^^
 
-
-//test set for both weight and bias
-
+//this allocates the GPIO pins based off of the global variables at the top of the file
 void setupPins(){
   pinMode(dataPins[0], OUTPUT);
   pinMode(dataPins[1], OUTPUT);
@@ -182,13 +180,13 @@ void setupPins(){
   digitalWrite(writePin, LOW);
 }
 
+//this sends a "clock" signal to the fpga
 void pulseWrite(){
-  //Serial.println("WRITE");
   digitalWrite(writePin, HIGH);
-  delay(delayValue);
   digitalWrite(writePin, LOW);
 }
 
+//this sets the data pins to be high or low depending on a character string of 1's and 0's
 void setDataPins(char value[]){
   for (int i = 0; i < 8; i++){
     if (value[i] == '0'){
@@ -198,10 +196,9 @@ void setDataPins(char value[]){
       digitalWrite(dataPins[7- i], HIGH);
     }
   }
-  //Serial.print("Data pins set to: ");
-  //Serial.println(value);
 }
 
+//this sets the selector pins to be high or low depending on a character string of 1's and 0's
 void setSelectorPins(char value[]){
   for (int i = 0; i < 2; i++){
     if (value[i] == '0'){
@@ -211,67 +208,63 @@ void setSelectorPins(char value[]){
       digitalWrite(selectorPins[1-i], HIGH);
     }
   }
-  //Serial.print("Selector pins set to: ");
-  //Serial.println(value);
 }
 
+//this reads the receiver pin as either a 1 or 0
 int readReciever(){
-  int val = digitalRead(receiver);
-  //Serial.print("Receiver pin value: ");
-  //Serial.println(val);
-  return(val);
+  return(digitalRead(receiver));
 }
 
+//this sets the bias on the fpga to match a character string of 1's and 0's
 void makeBias(char value[]){
   setSelectorPins("10");
   pulseWrite();
   setDataPins(value);
   pulseWrite();
-  delay(delayValue);
 }
 
+//this sets the weight on the fpga to match a character string of 1's and 0's
 void makeWeight(char value[]){
   setSelectorPins("01");
   pulseWrite();
   setDataPins(value);
   pulseWrite();
-  delay(delayValue);
 }
 
+//this sets the threshold on the fpga to match a character string of 1's and 0's
 void makeTheshold(char value[]){
   setSelectorPins("11");
   pulseWrite();
   setDataPins(value);
   pulseWrite();
-  delay(delayValue);
 }
 
 
-
+//this converts an integer to a character string of 1's and 0's
 char* intToBinary8(int number) {
-    static char value[9];
-
-    for (int i = 7; i >= 0; i--) {
-        value[7 - i] = ((number >> i) & 1) ? '1' : '0';
-    }
-
-    value[8] = '\0';
-
-    return value;
+  static char value[9];
+  for (int i = 7; i >= 0; i--) {
+    value[7 - i] = ((number >> i) & 1) ? '1' : '0';
+  }
+  value[8] = '\0';
+  return value;
 }
 
+//this updates both the weight and bias of the fpga
 void update(){
   makeBias(intToBinary8(bias));
   makeWeight(intToBinary8(xWeight));
 }
 
-int neuron(Sample currentSample){
+
+int trainingNeuron(Sample currentSample){
   setSelectorPins("00");
   pulseWrite();
   setDataPins(intToBinary8(currentSample.x));
   return (readReciever());
 }
 
+//this updates the weight and bias on the microccontroller using update rules
 void updateValues(int error){
   if (error > 0)
   {
@@ -291,54 +284,56 @@ void updateValues(int error){
 
 
 // run the training data
-void training()
-{
-    bool changed;
-    int maxEpoch = 1000;
-    int epoch = 0;
-    //repeat training until no changes are made
-    do
+void training(){
+  bool changed;
+  int maxEpoch = 1000;
+  int epoch = 0;
+  //repeat training until no changes are made
+  do
+  {
+    // start epoch
+    epoch++;
+    changed = false;
+    //Serial.println("epoch:" + String(epoch));
+
+    // train across the training set
+    for (auto currentSample : trainingData)
     {
-        // start epoch
-        epoch++;
-        changed = false;
-        //Serial.println("epoch:" + String(epoch));
+      int result = trainingNeuron(currentSample);// result of forward propagation
+      int error = currentSample.target - result;// error compared to the target
 
-        // train across the training set
-        for (auto currentSample : trainingData)
-        {
-            int result = neuron(currentSample);// result of forward propagation
-            int error = currentSample.target - result;// error compared to the target
-
-            if (error != 0)
-            {
-                updateValues(error);
-                update();
-                changed = true;
-            }
-        }
-    }while (changed && epoch < maxEpoch);
-}
-
-void test()
-{
-    int correct = 0;
-    for (auto currentSample : testData)
-    {
-        if (neuron(currentSample) == currentSample.target)
-        {
-            correct++;
-        }
+      if (error != 0)
+      {
+        updateValues(error);
+        update();
+        changed = true;
+      }
     }
-    // output the results
-    Serial.println("correct:" + String(correct));
-    Serial.println("total:" + String(testData.size()));
+  }while (changed && epoch < maxEpoch);
 }
 
+//this executes the test set
+void test(){
+  setSelectorPins("00");
+  pulseWrite();
+  int correct = 0;
+  for (auto currentSample : testData)
+  {
+    setDataPins(intToBinary8(currentSample.x));
+    if (readReciever() == currentSample.target)
+    {
+      correct++;
+    }
+  }
+  // output the results
+  Serial.println("correct:" + String(correct));
+  Serial.println("total:" + String(testData.size()));
+}
 
-
-
+//this performs the training and testing
 void neuralNetwork(){
+  makeTheshold(intToBinary8(threashold));
+  
   Serial.println("------------------------");
   Serial.println("RUNNING TRAINING");
   Serial.println("------------------------");
@@ -346,11 +341,12 @@ void neuralNetwork(){
   training();
   Serial.println("weight:" + String(xWeight));
   Serial.println("Bias:" + String(bias));
+
+  Serial.println("------------------------");
+  Serial.println("RUNNING TEST SET");
+  Serial.println("------------------------");
   test();
- 
-
 }
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -365,7 +361,6 @@ void loop() {
   if (Serial.available()) {
     char in = Serial.read(); 
     if (in == '\n'){
-      makeTheshold(intToBinary8(threashold));
       neuralNetwork();
     }
   }
