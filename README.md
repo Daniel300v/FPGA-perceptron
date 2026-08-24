@@ -100,13 +100,35 @@ For all variable updates, the process is the same just with different selector p
 Typical perceptions using a threshold activation function operates using the following:
 
 ```math
-y = wx + b
+y =
+\begin{cases}
+1 & \text{if }  wx+b \geq T \\
+0 & \text{if }  wx+b < T
+\end{cases}
 ```
 
-followed by:
+where:
+
+y - perceptron output
+
+x - perceptron input
+
+w - perceptron weight
+
+b - perceptron bias
+
+T - the threshold of the activation function
+
+and:
 
 ```math
-y={10​z≥Tz<T​}
+wx = w * x
+```
+
+This prototype functions slightly differently by replacing the multiplication of the input and weight with a left bit shift.
+
+```math
+wx = w << x
 ```
 
 # Eight bit perceptron implementation
@@ -131,24 +153,6 @@ The adder design is a standard simple eight bit adder, with the design following
 The comparator evaluates if the perceptron's value is greater than or equal to a the value stored in the associated register. 
 
 <img width="1306" height="182" alt="image" src="https://github.com/user-attachments/assets/68c9c94d-165b-43b0-bb88-209763380e40" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
