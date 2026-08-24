@@ -161,17 +161,7 @@ The comparator evaluates if the perceptron's value is greater than or equal to a
 <img width="1306" height="182" alt="image" src="https://github.com/user-attachments/assets/68c9c94d-165b-43b0-bb88-209763380e40" />
 
 
-# performance testing 
 
-All tests are the average of 1000 samples.
-
-| test | Description | time in microseconds |
-| --- | --- | --- |
-| update weight | This test measures how long it takes to update the weight | 9.26 |
-| update bias | This test measures how long it takes to update the bias | 9.41 |
-| update threshold | This test measures how long it takes to update the threshold | 9.31 |
-| single forward prop | This test measures how long it takes to switch to forward propagation and perform one pass | 8.22 |
-| pre selected forward prop | This test measures how long it takes to perform one forward pass, assuming that forward propagation has already been selected | 6.20 |
 
 
 
