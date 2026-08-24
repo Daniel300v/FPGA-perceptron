@@ -97,7 +97,7 @@ For all variable updates, the process is the same just with different selector p
 
 # Eight bit perceptron theory
 
-Typical perceptions using a threshold activation function operates using the following:
+A typical perceptron using a threshold activation function operates according to:
 
 ```math
 y =
@@ -122,14 +122,20 @@ T - the threshold of the activation function
 and:
 
 ```math
-wx = w * x
+wx = w×x
 ```
 
 This prototype functions slightly differently by replacing the multiplication of the input and weight with a left bit shift.
 
 ```math
-wx = w << x
+wx → w << x
+
 ```
+```math
+wx≈x×2^w
+```
+
+Furthermore, this prototype uses 8 bit unsigned integers for the input data, bias, and threshold. A 3 bit unsigned integer is used for the weight.  
 
 # Eight bit perceptron implementation
 
