@@ -54,7 +54,7 @@ The FPGA receives the following inputs:
 - selector [1:0]
 - write [0]
 
-The source data line is how the inputs for forward propagation and how new parameters are transferred in back propagation. The distinction between forward propagation and backward propagation data transfer is controlled via the selector inputs. The selector pins are encoded as follows:
+The source data line is how the inputs for forward propagation and how new parameters are transferred to update them. The distinction between forward propagation and parameter updating is controlled via the selector inputs. The selector pins are encoded as follows:
 - 00 - forward propagation 
 - 01 - update the weight
 - 10 - update the bias
@@ -93,6 +93,20 @@ For all variable updates, the process is the same just with different selector p
             │
             ▼
            Sink
+```
+
+# Eight bit perceptron theory
+
+Typical perceptions using a threshold activation function operates using the following:
+
+```math
+y = wx + b
+```
+
+followed by:
+
+```math
+y={10​z≥Tz<T​}
 ```
 
 # Eight bit perceptron implementation
