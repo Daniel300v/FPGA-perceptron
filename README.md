@@ -25,48 +25,84 @@ This repository is an investigation into how custom hardware may be able to impr
     B1 -->|"RESULT"| A1
 ```
 
-##Project limitations
+# Project limitations
+
 To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, some limitations have been placed on the project. 
 
-
-
-
-
-##How to run
-python version 3.12.0
-
-python testing framework: cocotb
-
-VHDL simulation: NVC
-
-VHDL development environment GOWIN
-
-
-## Eight bit perceptron theory
-
-The current implementation of the perceptron adheres to a few limitations:
+The current implementation of the perceptron adheres to a the following limitations:
 - The system will limited to eight bit unsigned integer values.
 - Multiplication will be replaced with bit shifting.
 - The activation function used will be a simple threshold function
 
 
+# How to run
+
+The VHDL is written in the GOWIN VHDL development environment.
+
+The VHDL tests are written in python and can be run using the following:
+
+- python version 3.12.0
+- python testing framework: cocotb
+- VHDL simulation: NVC
+
+VHDL is written to a Tang nano 9k.
+
+Hardware testing is done using the "testbench.ino" Arduino file running on an adafruit ESP32 feather V2.
+
+
+# Data transfer and control 
+
+The FPGA receives the following inputs:
+- source [7:0]
+- selector [1:0]
+- write [0]
+
+The source data line is how the inputs for forward propagation and how new parameters are transferred in back propagation. The distinction between forward propagation and backward propagation data transfer is controlled via the selector inputs. The selector pins are encoded as follows:
+- 00 - forward propagation 
+- 01 - update the weight
+- 10 - update the bias
+- 11 - update the threshold 
+
+The write input is used an external clock for selecting the different modes and updating the registers that contain the values of weight, bias, and threshold. Updates are performed on the rising side of the clock cycle. 
+
+The FPGA produces the following output:
+- sink [0]
+
+The sink output is a binary output representing the outcome of the activation function.
+
+
+
+To perform forward propagation the selector pins have to be set to 00, then one clock cycle is be performed via the write pin. After this, no clock cycles are needed and any data that is written to the source input is immediately processed and returned via the sink output. Any number of data points can be sent through without needing to change the selector pins or providing a new clock cycle.
+
+For all variable updates, the process is the same just with different selector pins being active. The process is as follows:
+- Set selector pins
+- perform one clock cycle
+- Set the source data
+- perform one clock cycle
+
 ## Architecture
 
 ```text
-          Input
+         Source ━━━━━━━━━━━━━━━━━━┓
+            │                     ┃
+            ▼                     ┃
+     Barrel Shifter ◀━━ Weight ◀━┫
+            │                     ┃
+            ▼                     ┃
+       8-bit Adder  ◀━━ Bias ◀━━━┫ 
+            │                     ┃
+            ▼                     ┃
+       Comparator ◀━━ Threshold ◀┛
             │
             ▼
-     Barrel Shifter
-            │
-            ▼
-       8-bit Adder
-            │
-            ▼
-       Comparator
-            │
-            ▼
-         Output
+           Sink
 ```
+
+
+
+# Eight bit perceptron theory
+
+
 
 
 ## Eight bit perceptron implementation
