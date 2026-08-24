@@ -1,5 +1,5 @@
 # FPGA-perceptron-
-This repository is an investigation into how custom hardware may be able to improve the performance of neural networks. To this end, a restricted scenario has been constructed to give an environment in which a proof of concept can be created. The principle idea is that designing a custom arithmetic logic unit on an FPGA will allow the FPGA to function as the core internals of a perceptron, while the training of the parameters of the perceptron is handled by an external device, such as a microcontroller.
+This repository is an investigation into how custom hardware may be used to create neural networks. To this end, a restricted scenario has been constructed to give an environment in which a proof of concept can be created. The principle idea is that designing a custom arithmetic logic unit on an FPGA will allow the FPGA to function as the core internals of a perceptron, while the training of the parameters of the perceptron is handled by an external device, such as a microcontroller.
                     
                         
 ```mermaid                       
@@ -24,9 +24,7 @@ This repository is an investigation into how custom hardware may be able to impr
 
 # Project limitations
 
-To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, some limitations have been placed on the project. 
-
-The current implementation of the perceptron adheres to a the following limitations:
+To reduce the complexity of the project, so that a prototype can be produced within a reasonable amount of time, some limitations have been placed on the project: 
 - The system will limited to eight bit unsigned integer values.
 - Multiplication will be replaced with bit shifting.
 - The activation function used will be a simple threshold function
@@ -159,6 +157,21 @@ The adder design is a standard simple eight bit adder, with the design following
 The comparator evaluates if the perceptron's value is greater than or equal to a the value stored in the associated register. 
 
 <img width="1306" height="182" alt="image" src="https://github.com/user-attachments/assets/68c9c94d-165b-43b0-bb88-209763380e40" />
+
+
+# Conclusion and further questions
+
+This prototype shows that a perceptron that is able to perform forward propagation without a clock, can be created using custom hardware.
+
+Questions left to be answered:
+- How does this scale with sequential neurons?
+- How does this scale with neurons in parallel?
+- How does this scale with more than one input to the neuron?
+- How does this scale when reducing its limitations, such as using true multiplication or? 
+
+
+
+
 
 
 
