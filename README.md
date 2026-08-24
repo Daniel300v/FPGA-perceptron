@@ -167,7 +167,7 @@ Questions left to be answered:
 - How does this scale with sequential neurons?
 - How does this scale with neurons in parallel?
 - How does this scale with more than one input to the neuron?
-- How does this scale when reducing its limitations, such as using true multiplication or? 
+- How does this scale when reducing its limitations, such as using true multiplication? 
 
 
 
