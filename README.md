@@ -4,9 +4,6 @@ This repository is an investigation into how custom hardware may be able to impr
                         
 ```mermaid                       
  flowchart LR
-
-    
-
     subgraph B["FPGA"]
         direction TB
         B1["Perceptron"]
@@ -98,20 +95,10 @@ For all variable updates, the process is the same just with different selector p
            Sink
 ```
 
+# Eight bit perceptron implementation
 
+The perceptron is made of three main parts, a barrel shifter, an adder, and a comparator, which are used to replicate the input weight, neuron bias, and activation function. These components use variables stored in registers and occur sequentially. 
 
-# Eight bit perceptron theory
-
-
-
-
-## Eight bit perceptron implementation
-
-Currently the perceptron is made of two parts, a barrel shifter and an adder. These are used to replicate the input weight and neuron offset. The total design so far is as follows:
-
-<img width="1347" height="231" alt="image" src="https://github.com/user-attachments/assets/ba5be571-c020-4066-8154-d535c2d2cd42" />
-
-Currently the weights are hard coded, as well as the static value for the comparator. This will be improved in future entries.
 
 ## barrel shifter
 
@@ -125,9 +112,9 @@ The adder design is a standard simple eight bit adder, with the design following
 
 <img width="1125" height="572" alt="image" src="https://github.com/user-attachments/assets/220c0e3a-9718-4ea7-9706-cc5084739f30" />
 
-## Comparitor
+## Comparator
 
-The comparator evaluates if the perceptron's value is greater than or equal to a statically defined value. It uses a primitive design that is easily improved to use fewer gates / LUTs.
+The comparator evaluates if the perceptron's value is greater than or equal to a the value stored in the associated register. 
 
 <img width="1306" height="182" alt="image" src="https://github.com/user-attachments/assets/68c9c94d-165b-43b0-bb88-209763380e40" />
 
